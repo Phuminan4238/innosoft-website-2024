@@ -1,0 +1,25 @@
+/* tailwind.css */
+
+/* Import IBM Plex Sans Thai font */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600&display=swap");
+
+/* Apply font-family to font-thai class */
+.font-thai {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+  }
+}
+
+[data-nextjs-dialog="true"] {
+  display: none !important;
+}
